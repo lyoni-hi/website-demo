@@ -11,7 +11,6 @@
         "astro": "astro"
     },
     "dependencies": {
-        "@astrojs/cloudflare": "^7.7.1",
         "@astrojs/mdx": "^1.1.5",
         "@astrojs/svelte": "^4.0.4",
         "accept-language-parser": "^1.5.0",
@@ -22,6 +21,7 @@
     "devDependencies": {
         "@astrojs/sitemap": "^3.0.3",
         "@types/accept-language-parser": "^1.5.6",
+        "gh-pages": "^6.3.0",
         "sass": "^1.69.5",
         "zod": "^3.22.4"
     }
