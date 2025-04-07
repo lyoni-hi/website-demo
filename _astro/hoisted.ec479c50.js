@@ -1,0 +1,2 @@
+import"./hoisted.301931df.js";import"./polyfills.49011320.js";function e(){const t=document.body.classList.contains("dark")?"dark":"light";document.getElementById("prism-theme").setAttribute("href",`/styles/prism-one-${t}.css`)}document.addEventListener("themechange",e);document.head.append(Object.assign(document.createElement("link"),{id:"prism-theme",rel:"stylesheet"}));e();
+//# sourceMappingURL=hoisted.ec479c50.js.map

@@ -1,0 +1,14 @@
+import { e as createAstro, f as createComponent, r as renderTemplate, h as addAttribute, m as maybeRenderHead, k as renderHead, j as renderComponent, i as renderSlot } from './astro_89511b65.mjs';
+/* empty css                         */import { I as ICON, A as AUTHOR, T as THEME_COLOUR, c as AUTHOR_URL, d as $$NavBar, $ as $$CenteredBody, e as $$Footer } from './pages/about_9b2a7e59.mjs';
+import { B as BlogFrontmatterSchema } from './prerender_bd920b40.mjs';
+/* empty css                         */
+const $$Astro = createAstro("https://lyoni-hi.github.io/website-demo/");
+const $$BlogLayout = createComponent(($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$BlogLayout;
+  const { title, description, publishDate, updateDate, section, tags } = BlogFrontmatterSchema.parse(Astro2.props.frontmatter);
+  return renderTemplate`<html lang="en" data-astro-cid-4dqtj3le> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon"${addAttribute(ICON, "href")}><title>${title}</title><meta name="description"${addAttribute(description, "content")}><meta name="author"${addAttribute(AUTHOR, "content")}><meta name="theme-color"${addAttribute(THEME_COLOUR, "content")}><meta name="og:type" content="article"><meta name="og:title"${addAttribute(title, "content")}><meta name="og:description"${addAttribute(description, "content")}><meta name="og:url"${addAttribute(Astro2.url, "content")}><meta name="og:image"${addAttribute(ICON, "content")}><meta property="article:author"${addAttribute(AUTHOR_URL, "content")}><meta property="article:published_time"${addAttribute(publishDate.toISOString(), "content")}>${updateDate != null && renderTemplate`<meta property="article:modified_time"${addAttribute(updateDate.toISOString(), "content")}>`}<meta property="article:section"${addAttribute(section, "content")}>${tags.split(",").map((tag) => renderTemplate`<meta property="article:tag"${addAttribute(tag.trim(), "content")}>`)}${maybeRenderHead()}<noscript><link id="prism-theme" rel="stylesheet" href="/styles/prism-one-light.css"></noscript>${renderHead()}</head> <body data-astro-cid-4dqtj3le> <header data-astro-cid-4dqtj3le> ${renderComponent($$result, "NavBar", $$NavBar, { "title": "Lyoni's Blog", "data-astro-cid-4dqtj3le": true })} </header> ${renderComponent($$result, "CenteredBody", $$CenteredBody, { "data-astro-cid-4dqtj3le": true }, { "default": ($$result2) => renderTemplate` <article id="blog-body" data-astro-cid-4dqtj3le> <h1 data-astro-cid-4dqtj3le>${title}</h1> <p data-astro-cid-4dqtj3le>${description}</p> ${renderSlot($$result2, $$slots["default"])} </article> ` })} ${renderComponent($$result, "Footer", $$Footer, { "data-astro-cid-4dqtj3le": true })}  </body></html>`;
+}, "/Users/lyoni/Downloads/site/src/layouts/BlogLayout.astro", void 0);
+
+export { $$BlogLayout as default };
+//# sourceMappingURL=BlogLayout_1069974a.mjs.map

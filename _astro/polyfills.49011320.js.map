@@ -1,0 +1,1 @@
+{"version":3,"file":"polyfills.49011320.js","sources":["../../src/scripts/polyfills.ts"],"sourcesContent":["if (!import.meta.env.SSR) {\n    // @ts-expect-error how is this still not a standard\n    window.setImmediate ??= (cb: Function) => setTimeout(cb, 0);\n}\n"],"names":["cb"],"mappings":"AAEI,OAAO,eAAkBA,GAAiB,WAAWA,EAAI,CAAC"}

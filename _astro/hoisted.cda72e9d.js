@@ -1,0 +1,2 @@
+import"./hoisted.301931df.js";import"./polyfills.49011320.js";function o(){let e=localStorage.getItem("theme");return e||(e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light",localStorage.setItem("theme",e)),e}const t=document.querySelector("#discord-widget"),r=()=>{const e={command:"setTheme",theme:o()};t.contentWindow.postMessage(e,"*"),console.log("Posted",e)};o()==="dark"&&(t.src=t.src.replace("theme=light","theme=dark"));document.addEventListener("themechange",r);
+//# sourceMappingURL=hoisted.cda72e9d.js.map
