@@ -1,0 +1,99 @@
+---
+import Codeberg from "./Icons/Codeberg.astro";
+import Email from "./Icons/Email.astro";
+import GitHub from "./Icons/GitHub.astro";
+import PgpKey from "./Icons/PgpKey.astro";
+import Telegram from "./Icons/Telegram.astro";
+import Mastodon from "./Icons/Mastodon.astro";
+import Social from "./Social.astro";
+---
+
+<ul>
+    <Social>
+        <iframe
+            id="discord-widget"
+            title="User Embed"
+            width="340"
+            height="120"
+            frameborder="0"
+            sandbox="allow-scripts"
+            src="https://widgets.vendicated.dev/user?id=125550059533107200&theme=light&banner=true&full-banner=false&rounded-corners=false&discord-icon=true"
+        ></iframe>
+    </Social>
+    <Social
+        title="Github"
+        text="Lyoni"
+        href="https://github.com/lyonidev"
+    >
+        <GitHub slot="icon" />
+    </Social>
+    <Social title="Codeberg" text="Lyoni" href="https://codeberg.org/lyoni">
+        <Codeberg slot="icon" />
+    </Social>
+    <Social
+        title="Telegram"
+        text="@hahahahhahhhaah"
+        href="https://t.me/hahahahhahhhaah"
+    >
+        <Telegram slot="icon" />
+    </Social>
+    <Social
+        title="Mastodon"
+        text="@Lyoni"
+        href="https://mastodon.social/@lyoni"
+    >
+        <Mastodon slot="icon" />
+    </Social>
+    <Social
+        title="Email"
+        text="Non Yet"
+        href="mailto:Vendcated%20<Non Yet>"
+    >
+        <Email slot="icon" />
+    </Social>
+    <Social title={"PGP"} text="A1DC 0CFB 5615 D905" href="/pgp_key.asc.txt">
+        <PgpKey slot="icon" />
+    </Social>
+</ul>
+
+<script>
+    import { getCurrentTheme } from "../scripts/themeRuntime";
+
+    const widget = document.querySelector(
+        "#discord-widget"
+    ) as HTMLIFrameElement;
+
+    const setWidgetTheme = () => {
+        const data = {
+            command: "setTheme",
+            theme: getCurrentTheme(),
+        };
+        widget.contentWindow!.postMessage(data, "*");
+        console.log("Posted", data);
+    };
+
+    if (getCurrentTheme() === "dark")
+        widget.src = widget.src.replace("theme=light", "theme=dark");
+
+    document.addEventListener("themechange", setWidgetTheme);
+</script>
+
+<style lang="scss">
+    ul {
+        list-style: none;
+        // the user agent padding is insane
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    iframe {
+        box-shadow: 0px 0px 0px 1px var(--color);
+        border-radius: 12px;
+    }
+
+    :global(.dark) iframe {
+        box-shadow: none;
+    }
+</style>
