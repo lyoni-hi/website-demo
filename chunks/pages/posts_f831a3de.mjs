@@ -12,7 +12,7 @@ async function buildPostData(ctx, req) {
   };
 }
 const get = async (ctx) => {
-  const files = Object.values(/* #__PURE__ */ Object.assign({"./test.mdx": () => import('./test_150e0298.mjs')}));
+  const files = Object.values(/* #__PURE__ */ Object.assign({"./test.mdx": () => import('./test_862cd98f.mjs')}));
   const posts = await Promise.all(
     Object.values(files).map((file) => buildPostData(ctx, file))
   );
@@ -21,4 +21,4 @@ const get = async (ctx) => {
 };
 
 export { get };
-//# sourceMappingURL=posts_e904fba9.mjs.map
+//# sourceMappingURL=posts_f831a3de.mjs.map

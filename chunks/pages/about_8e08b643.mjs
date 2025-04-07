@@ -1534,6 +1534,15 @@ function cache(res, seconds) {
 }
 
 const $$Astro = createAstro("https://lyoni-hi.github.io/website-demo/");
+async function getStaticPaths() {
+  return {
+    params: [
+      { lang: "en" },
+      { lang: "ja" }
+      // add more supported languages if needed
+    ]
+  };
+}
 const $$About = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$About;
@@ -1551,8 +1560,9 @@ const about = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
     __proto__: null,
     default: $$About,
     file: $$file,
+    getStaticPaths,
     url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
 export { $$CenteredBody as $, AUTHOR as A, ICON as I, Link as L, THEME_COLOUR as T, $$Layout as a, $$Icon as b, AUTHOR_URL as c, $$NavBar as d, $$Footer as e, about as f, getEnv as g };
-//# sourceMappingURL=about_9b2a7e59.mjs.map
+//# sourceMappingURL=about_8e08b643.mjs.map

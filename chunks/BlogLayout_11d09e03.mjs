@@ -1,6 +1,6 @@
 import { e as createAstro, f as createComponent, r as renderTemplate, h as addAttribute, m as maybeRenderHead, k as renderHead, j as renderComponent, i as renderSlot } from './astro_89511b65.mjs';
-/* empty css                         */import { I as ICON, A as AUTHOR, T as THEME_COLOUR, c as AUTHOR_URL, d as $$NavBar, $ as $$CenteredBody, e as $$Footer } from './pages/about_9b2a7e59.mjs';
-import { B as BlogFrontmatterSchema } from './prerender_bd920b40.mjs';
+/* empty css                         */import { I as ICON, A as AUTHOR, T as THEME_COLOUR, c as AUTHOR_URL, d as $$NavBar, $ as $$CenteredBody, e as $$Footer } from './pages/about_8e08b643.mjs';
+import { B as BlogFrontmatterSchema } from './prerender_6e3aec5c.mjs';
 /* empty css                         */
 const $$Astro = createAstro("https://lyoni-hi.github.io/website-demo/");
 const $$BlogLayout = createComponent(($$result, $$props, $$slots) => {
@@ -11,4 +11,4 @@ const $$BlogLayout = createComponent(($$result, $$props, $$slots) => {
 }, "/Users/lyoni/Downloads/site/src/layouts/BlogLayout.astro", void 0);
 
 export { $$BlogLayout as default };
-//# sourceMappingURL=BlogLayout_1069974a.mjs.map
+//# sourceMappingURL=BlogLayout_11d09e03.mjs.map

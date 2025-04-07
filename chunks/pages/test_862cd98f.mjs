@@ -73,7 +73,7 @@ const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","conf
 const MDXLayout = async function ({
   children
 }) {
-  const Layout = (await import('../BlogLayout_1069974a.mjs')).default;
+  const Layout = (await import('../BlogLayout_11d09e03.mjs')).default;
   const {
     layout,
     ...content
@@ -207,4 +207,4 @@ Content[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter.layout);
 Content.moduleId = "/Users/lyoni/Downloads/site/src/pages/[lang]/blog/test.mdx";
 
 export { Content, __usesAstroImage, Content as default, file, frontmatter, getHeadings, url };
-//# sourceMappingURL=test_150e0298.mjs.map
+//# sourceMappingURL=test_862cd98f.mjs.map

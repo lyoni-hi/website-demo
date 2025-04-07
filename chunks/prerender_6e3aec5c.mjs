@@ -1,6 +1,6 @@
 import { e as createAstro, f as createComponent, r as renderTemplate, j as renderComponent, m as maybeRenderHead, o as defineScriptVars, h as addAttribute, i as renderSlot, u as unescapeHTML, F as Fragment } from './astro_89511b65.mjs';
 import 'clsx';
-import { $ as $$CenteredBody, a as $$Layout, b as $$Icon, L as Link } from './pages/about_9b2a7e59.mjs';
+import { $ as $$CenteredBody, a as $$Layout, b as $$Icon, L as Link } from './pages/about_8e08b643.mjs';
 /* empty css                            */import { L as Locales, l as loadStrings, g as getStaticPaths } from './pages/_routeWithoutLocale__49d31e5f.mjs';
 /* empty css                          *//* empty css                            *//* empty css                            */import { z } from 'zod';
 /* empty css                          *//* empty css                        */
@@ -222,4 +222,4 @@ const _404 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 }, Symbol.toStringTag, { value: 'Module' }));
 
 export { BlogFrontmatterSchema as B, _404$1 as _, contact as a, index as b, convert as c, _404 as d, index$1 as i };
-//# sourceMappingURL=prerender_bd920b40.mjs.map
+//# sourceMappingURL=prerender_6e3aec5c.mjs.map
